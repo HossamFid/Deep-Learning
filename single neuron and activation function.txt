@@ -1,0 +1,29 @@
+the target of the neural network is to mimic the human behaivior  of the human brain
+
+the normal neuron consists of synapses 
+
+connects neurons and transfers the electrical signals from a neuron to another
+
+
+
+A Neural Network is a collection of neurons(which are analogous to the human brain), which are connected to every other neuron on the next layer(outgoing) and to the layer just before it(inputs). These connections have a value associated with them which is known as ‘weights’ and every neuron has a bias which helps in giving the right direction. Now after processing them, we apply an activation function that produces an output that predicts the most desired(according to input)result.
+
+
+What is Activation Function & Why we use it??
+
+in simple terms, the basic task of the activation function is to provide a way to decide to activate(produce a significant value as output) a neuron based on its weights and bias.
+Also, it helps in introducing non-linearity to the neural network’s output, and without it will be able to perform only linear mapping between x(inputs) and y(outputs).
+Without an activation function, the output will be just the dot product of the input vector and the weights matrix, which is added with bias, since all the terms in the calculations are linear the output will also be a linear line.
+Usually, the more complex the data is, from which we are trying to learn(make predictions), the more non-linear the mapping from the features to the ground truth label.
+
+Types of activation functions
+Now that we know why we need an activation function, it is the right step to look for some of the activation functions. There are a variety of activation functions available, let us look at the popular ones-
+Sigmoid Activation-it’s a mathematical function that maps any value within the range of 0 to 1, as you can notice in the image the value never reaches exactly 1or 0 it just tends to be 1 or 0.
+TanH Activation- it’s a mathematical function, which is also called the Hyperbolic Tangent function, which maps the values between -1 and +1. Same as sigmoid it also never reaches the exact value of 1 or -1.
+
+ReLU Activation-it stands for Rectified Linear Unit, it is the most common and popular activation function.it maps negative values to 0 and positive values to themselves, the image will make it more clear.
+
+
+SoftMax Activation- this activation function is used only in the output layer of the neural network, only when we need probability scores during classification problems. In this function, the output value not only depends on its input but also on the input of the other neurons of the same layer, as this function gives the probability of that particular(particular to neuron) output. The sum of the output of all the neurons is always 1, as it gives the probability.
+
+
